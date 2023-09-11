@@ -18,6 +18,11 @@ body {
     /* om man hade velat centrera utan flex
     margin-right: 50%;
     margin-left: 50%;;
+    alt..
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    
     */
 }
 
