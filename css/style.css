@@ -1,0 +1,23 @@
+html {
+    background-color: palevioletred;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    border: 2px;
+    border-style: groove;
+}
+
+table, th{
+    border: 2px;
+    border-style: ridge;
+}
+
+h2, li, label, h3, th, a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
