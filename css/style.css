@@ -14,13 +14,14 @@ body {
     border-style: outset;
     border-color: slateblue;
     transition: 0.5s ease-in-out;
+
     /* om man hade velat centrera utan flex
     margin-right: 50%;
     margin-left: 50%;;
     */
 }
 
-.catimage:hover{
+.catimage:hover {
     max-width: 45%;
 }
 
@@ -41,11 +42,11 @@ form {
     border-style: groove;
 }
 
-.clickme{
+.clickme {
     transition: 0.2s;
 }
 
-.clickme:active{
+.clickme:active {
     color: greenyellow;
 }
 
