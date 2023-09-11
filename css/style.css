@@ -1,5 +1,5 @@
 html {
-    background-color: palevioletred;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
 
 body {
@@ -13,6 +13,11 @@ body {
     border: 1rem;
     border-style: outset;
     border-color: slateblue;
+    transition: 0.5s ease-in-out;
+}
+
+.catimage:hover{
+    max-width: 45%;
 }
 
 .catvideo {
@@ -36,6 +41,74 @@ table,
 th {
     border: 2px;
     border-style: ridge;
+}
+
+.rainbowtext {
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.swag {
+    font-family: cursive;
+    color: deeppink;
+    transition: 1s ease-in-out;
+}
+
+.swag:hover {
+    font-size: 3rem;
+
+}
+
+@keyframes rainbow {
+
+    100%,
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    8% {
+        color: rgb(255, 127, 0);
+    }
+
+    16% {
+        color: rgb(255, 255, 0);
+    }
+
+    25% {
+        color: rgb(127, 255, 0);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+    }
+
+    41% {
+        color: rgb(0, 255, 127);
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+    }
+
+    58% {
+        color: rgb(0, 127, 255);
+    }
+
+    66% {
+        color: rgb(0, 0, 255);
+    }
+
+    75% {
+        color: rgb(127, 0, 255);
+    }
+
+    83% {
+        color: rgb(255, 0, 255);
+    }
+
+    91% {
+        color: rgb(255, 0, 127);
+    }
 }
 
 h2,
