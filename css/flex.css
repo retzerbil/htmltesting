@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 60rem;
+    background-color: cornflowerblue
+}
+
+.div1{
+    background-color:chartreuse;
+    height: 10rem;
+    width: 10rem;
+}
+
+.div2{
+    background-color:crimson;
+    height: 10rem;
+    width: 10rem;
+}
+
+.div3{
+    background-color:indigo;
+    height: 10rem;
+    width: 10rem;
+}
+
+.div4{
+    background-color:yellow;
+    height: 10rem;
+    width: 10rem;
+}
