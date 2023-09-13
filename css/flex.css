@@ -11,22 +11,44 @@
     background-color:chartreuse;
     height: 10rem;
     width: 10rem;
+    transition: 1s;
+}
+
+.div1:hover{
+    height: 13rem;
+    width: 13rem;
 }
 
 .div2{
     background-color:crimson;
     height: 10rem;
     width: 10rem;
+    transition: 1s;
+}
+
+.div2:hover{
+    height: 7rem;
+    width: 7rem;
 }
 
 .div3{
     background-color:indigo;
     height: 10rem;
     width: 10rem;
+    transition: 1s;
+}
+
+.div3:hover{
+    transform: rotate(180deg);
 }
 
 .div4{
     background-color:yellow;
     height: 10rem;
     width: 10rem;
+    transition: 1s;
+}
+
+.div4:hover{
+    transform: rotate3d(1, 1.5, 1, 190deg);
 }
