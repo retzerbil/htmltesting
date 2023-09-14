@@ -8,19 +8,35 @@
 </head>
 
 <body>
+    <!--1-->
+    <!--Attributes är viktiga för att ge extra information till HTML taggar och ibland extra funktioner-->
+
+    <!--2-->
+    <!--Opening: <h1> closing: </h1>-->
+
+    <!--3-->
     <p>Hello world!</p>
+
+    <!--4-->
     <hr>
     <h1>Headning</h1>
     <p>This paragrah contains a <b>bold</b> word and a word in <i>italics</i></p>
     <hr>
+    <!--5-->
     <a href="https://www.google.com/webhp">Hyperlink to Google</a>
 
+    <!--6-->
     <ol>
         <li>item 1</li>
         <li>item 2 </li>
         <li>item 3</li>
     </ol>
 
+    <!--7-->
+    <!--Section visar en sektion av ett dokument medans en article kan vara oberoende och fristående innehåll.
+    En section är en gruppering av content och hör oftast ihop med andra saker, medans en article ska vara begriplig i sig själv.-->
+
+    <!--8-->
     <h2>best drinks</h2>
     <ol>
         <li>soda</li>
@@ -46,20 +62,116 @@
         <li>food</li>
     </ul>
 
+    <!--9-->
+    <!--Man kan använda w3cvalidator online på url:n https://validator.w3.org/. 
+    Man kan antingen ladda upp sina html eller css dokument eller kopiera och klistra in rå kod.-->
 
-    <thead>
-        <th>måndag</th>
-        <th>tisdag</th>
-        <th>onsdag</th>
-        <th>torsdag</th>
-        <th>fredag</th>
-        <th>lördag</th>
-        <th>söndag</th>
-    </thead>
+    <!--10-->
+    <form action="https://httpbin.org/post">
+        <fieldset>
+            <legend>Student Info</legend>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="First Name">First Name</label>
+                <input type="text" name="First Name" id="">
+                <br>
+                <br>
+                <label for="Last Name">Last Name</label>
+                <input type="text" name="Last Name" id="">
+                <br>
+                <br>
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="">
 
-    <!--
-    Använd <legend> för att få streckat och text som avbryter.
-    -->
+            </fieldset>
+            <fieldset>
+                <legend>Photo</legend>
+                <img src="img/Cebu-Flowerpecker.jpg" alt="Picture of a Cebu Flowerpecker bird">
+                <figcaption>A Cebu Flowerpecker!</figcaption>
+            </fieldset>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+        </fieldset>
+    </form>
+
+
+    <!--11-->
+    <p>September</p>
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><b>Måndag</b></td>
+                <td><b>Tisdag</b></td>
+                <td><b>Onsdag</b></td>
+                <td><b>Torsdag</b></td>
+                <td><b>Fredag</b></td>
+                <td><b>Lördag</b></td>
+                <td><b>Söndag</b></td>
+            </tr>
+            <tr>
+                <td><b>35</b></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><b>36</b></td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><b>37</b></td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td><b>38</b></td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td><b>39</b></td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--12-->
+    <!--Ett versionhanteringssystem är för att man ska kunna säkert arbeta med kod, och att man ska kunna gå tillbaka till tidigare versioner om något går fel.
+    Det går även att arbeta flera personer samtidigt med samma kod, och att man samtidigt gör det enkelt att lösa och upptäcka konflikter i kod.-->
+
+    <!--13-->
+    <!--En commit är som en snapshot av kod som man tycker är fungerande kod, man kan senare se dessa commits och backa till dem om man senare har sönder något.
+    En commit sparas endast lokalt på ens dator, för att andra användare ska kunna komma åt ens kod måste man pusha ens commitade kod.-->
+
+    <!--14-->
+    <!--Pull är för att uppdatera och hämta alla ändringar som andra användare har gjort på branchen man är på. Push är för att skicka upp ens egna kod i repositoryt.
+    En repository är som ett projekt, där all kod/filer för något samlas.-->
 </body>
 
 </html>
