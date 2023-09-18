@@ -4,6 +4,9 @@ Sass är ett pre-processing language
 Sass är kompatibelt med alla versioner av CSS
 Sass är helt open source
 */
+@import "reset";
+@import "variables";
+
 
 /*Variables*/
 $textSize: 1rem;
