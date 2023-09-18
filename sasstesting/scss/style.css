@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+CSS står för Syntatically Awesome Style Sheet
+Sass är ett pre-processing language
+Sass är kompatibelt med alla versioner av CSS
+Sass är helt open source
+*/
+/*Variables*/
+.main {
+  color: blue;
+  background-color: lime;
+}
+.main .section {
+  font-weight: 700;
+}
+.main .section .p1 {
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */

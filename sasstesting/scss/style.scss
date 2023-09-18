@@ -1,0 +1,41 @@
+/*
+CSS står för Syntatically Awesome Style Sheet
+Sass är ett pre-processing language
+Sass är kompatibelt med alla versioner av CSS
+Sass är helt open source
+*/
+
+/*Variables*/
+$textSize: 1rem;
+$bgColors: (
+    "primaryColor":lime,
+    "secondaryColor":green,
+    "textColor": blue
+);
+
+$fontWeight: (
+    "small":100,
+    "regular":400,
+    "medium": 500,
+    "large": 700
+    );
+
+    @function weight ($weight){
+        @return map-get($fontWeight , $weight);
+    }
+
+    @function getColor ($color){
+        @return map-get($bgColors , $color );
+    }
+    
+.main {
+    color: getColor(textColor);
+    background-color: getColor(primaryColor);
+    .section{
+        font-weight: weight(large);
+        .p1{
+            font-weight: weight(small);
+        }
+    }
+}
+
