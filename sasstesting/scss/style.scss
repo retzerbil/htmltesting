@@ -28,13 +28,28 @@ $fontWeight: (
         @return map-get($bgColors , $color );
     }
     
+    @mixin centerStyle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 .main {
     color: getColor(textColor);
     background-color: getColor(primaryColor);
+   @include centerStyle();
     .section{
         font-weight: weight(large);
         .p1{
             font-weight: weight(small);
+        }
+    }
+    #{&}_section{
+        p{
+            color: yellow;
+        }
+        p:hover{
+            color: yellowgreen;
         }
     }
 }

@@ -9,10 +9,19 @@ Sass är helt open source
 .main {
   color: blue;
   background-color: lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main .section {
   font-weight: 700;
 }
 .main .section .p1 {
   font-weight: 100;
+}
+.main .main_section p {
+  color: yellow;
+}
+.main .main_section p:hover {
+  color: yellowgreen;
 }/*# sourceMappingURL=style.css.map */
