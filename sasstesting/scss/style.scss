@@ -18,39 +18,42 @@ $fontWeight: (
     "regular":400,
     "medium": 500,
     "large": 700
-    );
+);
 
-    @function weight ($weight){
-        @return map-get($fontWeight , $weight);
-    }
+@function weight ($weight) {
+    @return map-get($fontWeight , $weight);
+}
 
-    @function getColor ($color){
-        @return map-get($bgColors , $color );
-    }
-    
-    @mixin centerStyle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@function getColor ($color) {
+    @return map-get($bgColors , $color );
+}
+
+@mixin centerStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .main {
     color: getColor(textColor);
     background-color: getColor(primaryColor);
-   @include centerStyle();
-    .section{
+    @include centerStyle();
+
+    .section {
         font-weight: weight(large);
-        .p1{
+
+        .p1 {
             font-weight: weight(small);
         }
     }
-    #{&}_section{
-        p{
+
+    #{&}_section {
+        p {
             color: yellow;
         }
-        p:hover{
+
+        p:hover {
             color: yellowgreen;
         }
     }
 }
-
