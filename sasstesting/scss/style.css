@@ -5,6 +5,12 @@ Sass är ett pre-processing language
 Sass är kompatibelt med alla versioner av CSS
 Sass är helt open source
 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /*Variables*/
 .main {
   color: blue;
