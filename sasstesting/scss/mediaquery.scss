@@ -1,0 +1,35 @@
+@mixin setMaxWidth($width) {
+    max-width: $width;
+}
+
+/*
+@mixin reduced() {
+    max-width: 200px;
+}
+
+@mixin extrarecuded() {
+    max-width: 100px;
+}
+
+.paragraphOne {
+    @media (max-width: 400px) {
+        @include reduced();
+    }
+}
+
+.paragraphTwo {
+    @media (max-width: 400px) {
+        @include extrarecuded();
+    }
+}
+*/
+
+@media (max-width: 400px) {
+    .paragraphOne {
+        @include setMaxWidth(400);
+    }
+
+    .paragraphTwo {
+        @include setMaxWidth(200);
+    }
+}
