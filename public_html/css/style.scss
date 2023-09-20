@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@mixin darkMode() {
+    background-color: grey;
+}
+
+@mixin lightMode() {
+    background-color: wheat;
+}
+
+@function pxToem($pixel) {
+    @return math.div($pixel, 16)+em;
+}
+
+@function fontColorPicker($bgColor) {
+    @if $bgColor =="dark" {
+        @return black;
+    }
+
+    @else {
+        @return white;
+    }
+}
+
+body {
+    font-weight: 700 - 200;
+    width: math.div(85.2vw, 12.6vw);
+}
+
+h1 {
+    font-size: pxToem(100);
+    color: fontColorPicker(dark);
+}

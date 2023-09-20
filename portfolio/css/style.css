@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mooli&family=Rokkitt:wght@200&family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mooli&family=Rokkitt:wght@200&family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+.pre1, .title1 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.pre2, .title2 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.pre3, .title3 {
+  font-family: "Bungee", cursive;
+}
+
+.pre4, .title4 {
+  font-family: "IM Fell English SC", serif;
+}
+
+.pre5, .title5 {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+pre {
+  font-size: 0.8em;
+}/*# sourceMappingURL=style.css.map */

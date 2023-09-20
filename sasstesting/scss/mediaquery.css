@@ -21,9 +21,9 @@
 */
 @media (max-width: 400px) {
   .paragraphOne {
-    max-width: 400;
+    max-width: 400px;
   }
   .paragraphTwo {
-    max-width: 200;
+    max-width: 200px;
   }
 }/*# sourceMappingURL=mediaquery.css.map */

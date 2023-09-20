@@ -2,6 +2,9 @@
     max-width: $width;
 }
 
+$reduced: 400px;
+$extraReduced: 200px;
+
 /*
 @mixin reduced() {
     max-width: 200px;
@@ -26,10 +29,10 @@
 
 @media (max-width: 400px) {
     .paragraphOne {
-        @include setMaxWidth(400);
+        @include setMaxWidth($reduced);
     }
 
     .paragraphTwo {
-        @include setMaxWidth(200);
+        @include setMaxWidth($extraReduced);
     }
 }
