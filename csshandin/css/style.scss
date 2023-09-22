@@ -1,0 +1,100 @@
+a,
+p,
+i,
+figcaption,
+footer {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1:first-letter {
+    color: yellow;
+    font-size: 3em;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 1em;
+}
+/* Om man vill att li ska bli gul då man hovrar
+li:hover{
+    background-color: yellow;
+}
+*/
+
+.container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "fluff1 swedishFlag swedishFlag swedishFlag fluff2"
+        "fluff1 swedishMountainPicture swedishMountainPicture swedenInfoAside fluff2"
+        "fluff1 imageText imageGallery swedenInfoAside fluff2"
+        "fluff1 imageText imageGallery swedenInfoAside fluff2";
+}
+
+.footer {
+    background-color: purple;
+    padding: 1em;
+    padding-left: 85%;
+}
+
+/*Bas-stil*/
+.box {
+    background-color: paleturquoise;
+    margin: 0.2em;
+}
+
+/*Bilden på berg och vatten*/
+.box:first-child {
+    background-color: blue;
+    grid-area: swedishMountainPicture;
+}
+
+/*Bilderna på vildmarken och huset*/
+.box:last-child {
+    background-color: palevioletred;
+    text-wrap: nowrap;
+    grid-area: imageGallery;
+    img {
+        min-width: 240px;
+    }
+}
+/*Svenska flaggan*/
+.box:nth-child(2) {
+    grid-area: swedishFlag;
+}
+
+/*Långa texten*/
+.box:nth-child(3) {
+    grid-area: swedenInfoAside;
+}
+
+/*texten för bilderna*/
+.box:nth-child(4) {
+    bottom: 0;
+    writing-mode: vertical-rl;
+    font-size: 1.2em;
+    grid-area: imageText;
+}
