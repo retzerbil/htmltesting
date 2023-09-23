@@ -8,14 +8,20 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
 .p1:first-letter {
   color: yellow;
   font-size: 3em;
 }
 
 body {
-  margin-left: 25%;
-  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 nav {
@@ -46,16 +52,20 @@ li:hover{
 .container {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
   gap: 0px 0px;
-  grid-template-areas: "fluff1 swedishFlag swedishFlag swedishFlag fluff2" "fluff1 swedishMountainPicture swedishMountainPicture swedenInfoAside fluff2" "fluff1 imageText imageGallery swedenInfoAside fluff2" "fluff1 imageText imageGallery swedenInfoAside fluff2";
+  grid-template-areas: "swedishFlag swedishFlag swedishFlag" "swedishMountainPicture swedishMountainPicture swedenInfoAside" "imageText imageGallery swedenInfoAside" "imageText imageGallery swedenInfoAside";
+  /*        "fluff1 swedishFlag swedishFlag swedishFlag fluff2"
+  "fluff1 swedishMountainPicture swedishMountainPicture swedenInfoAside fluff2"
+  "fluff1 imageText imageGallery swedenInfoAside fluff2"
+  "fluff1 imageText imageGallery swedenInfoAside fluff2";*/
 }
 
 .footer {
   background-color: purple;
   padding: 1em;
-  padding-left: 85%;
+  text-align: right;
 }
 
 /*Bas-stil*/
@@ -92,8 +102,7 @@ li:hover{
 
 /*texten för bilderna*/
 .box:nth-child(4) {
-  bottom: 0;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   font-size: 1.2em;
   grid-area: imageText;
 }/*# sourceMappingURL=style.css.map */
