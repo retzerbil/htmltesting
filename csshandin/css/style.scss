@@ -109,3 +109,9 @@ li:hover{
     font-size: 1.2em;
     grid-area: imageText;
 }
+
+@mixin box($size,$color){
+    width: $size;
+    height: $size;
+    background-color: $color;
+}
